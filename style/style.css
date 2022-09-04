@@ -1,25 +1,29 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
-    background-color: rgb(138, 24, 24);
+    background-color: rgb(24, 62, 138);
     padding: 2rem 2rem 2rem 2rem;
     color: white;
     text-shadow: 2px 2px black;
+    font-size: 30px;
 }
 body{
-    background-color: rgb(240, 62, 62);
+    background-color: rgb(49, 88, 177);
 }
 nav {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     overflow: hidden;
-    background-color: rgb(172, 21, 21);
+    background-color: rgb(24, 62, 138);
     position: relative;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 a:hover{
-    background-color: rgb(138, 24, 24);
+    background-color: rgb(49, 88, 177);
 }
 a:link {
     color: white;
@@ -29,7 +33,7 @@ a:visited{
     color: gray;
 }
 a:active{
-    color:darkred;
+    color:rgb(0, 7, 139);
 }
 section {
     color: white;
@@ -39,12 +43,16 @@ section {
 }
 article{
     float: left;
-    width: 29%;
-    background-color: rgb(109, 14, 14);
-    padding: 2rem;
-    margin: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(90% / 3);
+    background-color: rgb(21, 103, 153);
+    padding: 1rem;
+    margin: calc(5% /3);
     text-shadow: 2px 2px black;
     color: white;
+    border-style: solid;
+    border-radius: 25px;
 }
 footer {
     position: fixed;
@@ -52,5 +60,28 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: rgb(138, 24, 24);
+    background-color: rgb(24, 62, 138);
+    color: white;
+    text-shadow: 2px 2px black;
 }
+.about-section{
+    color:white;
+    text-shadow: 2px 2px black;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(21, 103, 153);
+}
+.title{
+    color:rgb(189, 188, 188);
+}
+
+
+
+
+

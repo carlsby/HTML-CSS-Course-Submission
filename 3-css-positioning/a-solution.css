@@ -48,7 +48,7 @@ article {
     margin-right: auto;
     margin: calc(5% /3);
     padding: 2rem;
-    width: calc(90% / 3);
+    width: 100%;
     background-color: #def2f1;
 }
 footer {
@@ -59,5 +59,4 @@ footer {
     padding: 3rem 2rem 3rem 2rem;
     background-color: #17242a;
     color: white;
-    text-align: center;
 }
