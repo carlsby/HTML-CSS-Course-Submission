@@ -6,11 +6,11 @@
     <meta name="description" content="HTML and CSS exercise">
     <meta name="keywords" content="HTML, CSS, Exercise">
     <meta name="author" content="Carl Andersson">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <header>
-   <h1> About us </h1>
+    <h1 class="about-us">About us</h1>
 </header>
 <body>
     <nav>
@@ -20,29 +20,42 @@
         <a href="#">Contact</a>
     </nav>
     <br>
-    <div class="about-section">
+    <div class="our-team-section">
         <h1>Our Team</h1>
     </div>
-        <article>
-        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Steven Jacobsen" width="100%" height: auto;>
-        <h2>Steven Jacobsen</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Steve.Jacobsen@example-mail.com</p>
-    </article>
-    <article>
-        <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Emma Wilson" width="100%" height: auto;>
-        <h2>Emma Wilson</h2>
-        <p class="title">CFO</p>
-        <p>Emma.Wilson@example-mail.com</p>
-    </article>
-    <article>
-        <img src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mark Silverman" width="100%" height: auto;>
-        <h2>Mark Silverman</h2>
-        <p class="title">Head of Sales</p>  
-        <p>Mark.Silverman@example-mail.com</p>
-    </article>
+    <div class="row">
+        <div class="about-image-section">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Steven Jacobsen" width="100%" height: auto;>
+                <h2>Steven Jacobsen</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Steve.Jacobsen@ecshoes.com<br><br></p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+        <div class="about-image-section">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Emma Wilson" width="100%" height: auto;>
+                <h2>Emma Wilson</h2>
+                <p class="title">CFO</p>
+                <p>Emma.Wilson@ecshoes.com<br><br></p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>    
+        <div class="about-image-section">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mark Silverman" width="100%" height: auto;>
+                <h2>Mark Silverman</h2>
+                <p class="title">Head of Sales</p>  
+                <p>Mark.Silverman@ecshoes.com<br><br></p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>The Company™</p>
+        <div class="ecshoesfooter"><img src="ecshoes.png" alt="ecshoeslogo" width="30" height="25"></div>
+        <p class="footertext">EC Shoes</p>
+    </div>
     </footer>
     </body>
 </html>
