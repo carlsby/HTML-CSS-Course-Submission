@@ -20,7 +20,6 @@ nav {
     overflow: hidden;
     background-color: rgb(24, 62, 138);
     position: relative;
-    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 a:hover{
     background-color: rgb(49, 88, 177);
@@ -39,7 +38,6 @@ section {
     color: white;
     padding: 2 rem;
     overflow: hidden;
-    text-shadow: 2px 2px black;
 }
 article{
     float: left;
@@ -52,7 +50,6 @@ article{
     text-shadow: 2px 2px black;
     color: white;
     border-style: solid;
-    border-radius: 25px;
 }
 footer {
     position: fixed;
@@ -60,9 +57,6 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: rgb(24, 62, 138);
-    color: white;
-    text-shadow: 2px 2px black;
 }
 .about-section{
     color:white;
@@ -80,8 +74,3 @@ footer {
 .title{
     color:rgb(189, 188, 188);
 }
-
-
-
-
-
