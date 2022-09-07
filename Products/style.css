@@ -1,0 +1,124 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+  background-color: #2d4c39;
+  color: white;
+
+
+}
+
+.container {
+  display: flex; /*visar bredvid varandra*/
+  padding: 10px;
+  background-image:url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*täcker alltid headern*/
+  background-position: center top;
+  background-size: contain;/*ser till att den blir synlig*/
+  color: white;
+  justify-content: center;
+
+ 
+  
+}
+
+
+.dot-woman, .dot-man, .dot-kids {
+  height: 10px;
+  margin: 20px;/*marginal runt sitt innehåll*/
+  width: 20px;
+  box-shadow: 5px 5px 2px #182b20;
+  background-color: #284433;
+  border-radius: 50%;
+  padding: 5rem;
+  display:flex;
+  align-items: center;
+  font-family: 'Open sans', sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+  justify-content: center;/*hur elementet ska placera sig horisontellt*/
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1rem hidden #64876d;
+  background-color: #64876d; /*lägger sig som en linje över hela navet*/
+}
+  
+li {
+  float: left;
+
+}
+
+
+ul li {
+list-style: none; /*tar bort punkterna*/
+display: inline-block; /*sitter jämte varandra*/
+line-height: 3rem;
+
+
+}
+
+
+ul li a {
+display: block;
+text-decoration: none; /*tar bort understrecken*/
+font-size:16px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+color: white;
+padding: 0 2rem; /*avståndet mellan elementen*/
+background-color: #64876d;
+
+
+}
+li a:hover {
+  background-color: #40614D; /*visar vart musen pekar på*/
+}
+
+
+.dot-woman a, .dot-man a, .dot-kids a {
+display: block;
+text-decoration: none; /*tar bort understrecken*/
+font-size:20px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+color: white;
+
+
+}
+
+.dot-woman a:hover, .dot-man a:hover, .dot-kids a:hover {
+color:#90a999;
+font-size: 150%;
+transition: 0.23s;
+
+
+}
+
+.h2{
+  opacity: 0.5;
+  
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: #254231;
+  color: white;
+  text-align: center;
+}
+
+    
