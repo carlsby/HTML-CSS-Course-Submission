@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem 4.8rem;
+  background-color: #f3ede1;
+  border-bottom: solid 1px c2beb4;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  border: none;
+  font-size: 2.2rem;
+  gap: 1rem;
+}
+
+.link:link,
+.link:visited,
+.header-title:link,
+.header-title:visited {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.link:hover,
+.link:active,
+.header-title:hover,
+.header-title:active {
+  opacity: 50%;
+  border: 1px solid black;
+}
+
+.section-hero {
+  padding: 7.2rem 0 9.6rem 0;
+  background-color: #fdfbf9;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9.6rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+h2 {
+  align-self: center;
+  font-size: 3.2rem;
+}
+
+.latest-fashion {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.offer {
+  font-size: 2.3rem;
+  margin-top: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 3rem;
+}
+
+.free-return {
+  font-size: 2.3rem;
+  margin-top: 2.2rem;
+}
+
+.img-right {
+  justify-self: flex-end;
+}
+
+.groups-text {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groups-img {
+  display: flex;
+  gap: 5.8rem;
+  margin: 2rem 1rem 0rem 1rem;
+}
+
+.img {
+  width: 85%;
+}
+
+.hero-text {
+  font-size: 2.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-text:link,
+.img-text:visited {
+  border-radius: 11%;
+  padding: 0.2rem 1.2rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.img-text:hover,
+.img-text:active {
+  border-radius: 11%;
+  padding: 0.2rem 1.2rem;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.arrow {
+  width: 1.9rem;
+}
+
+.img-round {
+  width: 22%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.img-round:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 2rem 4.8rem;
+  background-color: #f3ede1;
+  border-top: solid 1px c2beb4;
+  font-size: 2.2rem;
+  align-items: center;
+}
