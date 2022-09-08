@@ -1,0 +1,116 @@
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+header{
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+body{
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 50px;
+}
+nav{
+    font-size: 30px;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0,4s;
+    width: 100%;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(201, 201, 201, 0.74);
+}
+a:link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(155, 157, 163);
+}
+a:active{
+    color :rgb(73, 72, 72);
+}
+.about-us-section{
+    text-align: center;
+    font-size: 30px;
+    height: 225px;
+    background-image: url('../Images/pexels-guillaume-meurice-1591447.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    background-size: cover;
+}
+.info-col{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    color: black;
+}
+.image-flexbox{
+    display: flex;
+    float: left;
+    padding: 1rem;
+    width: 80%;
+    margin-left: 300px;
+    gap: 30px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(143, 227, 207);
+    color: black;
+    padding: 6px;
+}
+.ecshoesfooter{
+    float: left;
+}
+.footertext{
+    text-align: center;
+}
+.title{
+    color: rgb(65, 65, 65);
+}
+.about-image-section{
+  float: left;
+  margin-bottom: 4px;
+  margin: 3rem;
+  max-width: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    text-align: center;
+}
+@media screen and (max-width: 650px) {
+    .about-image-section{
+      width: 100%;
+      display: block;
+    }
+}
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition-duration: 0,4s;
+}
+.button:hover {
+    background-color: rgb(49, 49, 49);
+}
