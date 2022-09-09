@@ -1,9 +1,9 @@
 *{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 header{
     background-color: white;
     width: 100%;
@@ -14,16 +14,98 @@ body{
     padding-bottom: 50px;
 }
 nav{
-    font-size: 30px;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+a.nav{
     position: relative;
     text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    letter-spacing: 0,5px;
+    padding: 0 10px;
 }
-a:visited{
-    color: rgb(155, 157, 163);
+a.nav:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
 }
-a:active{
-    color :rgb(73, 72, 72);
+a.nav:hover:after{
+    width: 100%;
+}
+.image-flexbox{
+    position: relative;
+    padding: 1rem;
+    width: 80%;
+    margin-left: 18vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.staff-link{
+    position: absolute;
+    top: 51%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+.staff-link>a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    font-size: 3vw;
+    letter-spacing: 0,5px;
+    padding: 0 10px;
+}
+.staff-link>a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.staff-link>a:hover:after{
+    width: 100%;
+}
+.our-values-link{
+    position: absolute;
+    top: 42%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+.our-values-link>a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+.our-values-link>a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.our-values-link>a:hover:after{
+    width: 100%;
 }
 .about-us-section{
     text-align: center;
@@ -35,12 +117,14 @@ a:active{
     background-position: center;
     max-width: 100%;
     background-size: cover;
+    padding: 4vw;
 }
 .info-col{
     text-align: center;
     margin: auto;
     width: 50%;
     color: black;
+    padding: 1vw;
 }
 footer{
     position: fixed;
@@ -75,6 +159,12 @@ footer{
     margin: 8px;
     text-align: center;
 }
+@media screen and (max-width: 650px) {
+    .about-image-section{
+      width: 100%;
+      display: block;
+    }
+}
 .button{
     border: none;
     outline: 0;
@@ -89,4 +179,74 @@ footer{
 }
 .button:hover {
     background-color: rgb(49, 49, 49);
+}
+.ourbrands{
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 0.5vw;
+    font-size: 2vw;
+}
+.slider{
+    width: 35vw;
+    height: 20vw;
+    background: url('../Images/adidas-slide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    animation: slide 20s infinite;
+}
+.slider-links{
+    padding-top: 8vw;
+}
+.slider-links>a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px black;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+.slider-links>a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.slider-links>a:hover:after{
+    width: 100%;
+}
+@keyframes slide{
+    25%{
+        background: url('../Images/adidas-slide.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    50%{
+        background: url('../Images/nike-slide.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url('../Images/vans-slide.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url('../Images/swc-slide.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
