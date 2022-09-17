@@ -4,69 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ECskor en skobutik för alla, shoes store for everyone"
+    />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <title>ECskor</title>
+    <link rel="stylesheet" type="text/css" href="queries.css" />
+    <title>ECskor | Hem</title>
   </head>
   <body>
     <header class="header">
-      <a class="header-title" href="index.html"><image class="header-logo" src="img/ECSKOR.png" alt="ECSkor Logo"> </a>
       <nav class="main-nav">
-        <ul class="main-nav-list">
+        <a class="logo" href="index.html"
+          ><img class="header-logo" src="img/ECSKOR.svg" alt="ECSkor Logo"
+        /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon"
+          ><span class="nav-icon"></span
+        ></label>
+        <ul class="menu">
           <li><a class="link" href="index.html">Home</a></li>
-          <li><a class="link" href="products.html">Products</a></li>
-          <li><a class="link" href="about.html">About</a></li>
-          <li><a class="link" href="contact.html">Contact</a></li>
+          <li><a class="link" href="../Products/products.html">Products</a></li>
+          <li><a class="link" href="../About/about.html">About</a></li>
+          <li>
+            <a class="link link-last" href="../Contact/contact.html "
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="section-hero">
-      <div class="hero">
-        <div class="test">
-          <img class="img" src="img/woman-shoes.jpg" alt="vetinte" />
-        </div>
-        <div class="hero-text">
-          <h2>Välkommen till ECskor</h2>
-          <p class="latest-fashion">
-            Här erbjuder vi det absolut senaste modet för barn och vuxna i alla
-            åldrar till det bästa priset på marknaden.
-          </p>
-          <p class="offer">
-            Köp <span class="number">3</span> betala för
-            <span class="number">2</span>
-          </p>
-          <p class="free-return">Fri returrätt i 30 dagar på alla köp</p>
-          <div class="groups-text">
-            <a class="img-text" href="#"
-              >Dam<ion-icon
-                class="arrow"
-                name="arrow-forward-outline"
-              ></ion-icon
-            ></a>
-            <a class="img-text" href="#"
-              >Herr<ion-icon
-                class="arrow"
-                name="arrow-forward-outline"
-              ></ion-icon
-            ></a>
-            <a class="img-text" href="#"
-              >Barn<ion-icon
-                class="arrow"
-                name="arrow-forward-outline"
-              ></ion-icon
-            ></a>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <img
+            class="img"
+            src="img/woman-shoes.jpg"
+            alt="kvinna som tar på sig röda skor"
+          />
+          <div class="hero-text">
+            <h2>Välkommen till ECskor</h2>
+
+            <p class="latest-fashion media-size">
+              Här erbjuder vi det absolut senaste modet för barn och vuxna i
+              alla åldrar till det bästa priset på marknaden.
+            </p>
+            <p class="offer media-size">
+              Köp <span class="number">3</span> betala för
+              <span class="number">2</span>
+            </p>
+            <p class="free-return media-size">
+              Fri returrätt i <span class="number">30</span> dagar på alla köp
+            </p>
+            <div class="groups-container">
+              <div class="groups-text">
+                <a class="img-text" href="../Products/woman.html"
+                  >Dam<ion-icon
+                    class="arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon
+                ></a>
+                <a class="img-text" href="../Products/man.html"
+                  >Herr<ion-icon
+                    class="arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon
+                ></a>
+                <a class="img-text" href="../Products/kids.html"
+                  >Barn<ion-icon
+                    class="arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+              <div class="groups-img">
+                <img class="img-round" src="img/dam-sko.jpg" alt="dam skor" />
+                <img class="img-round" src="img/herr-sko.jpg" alt="herr sko" />
+                <img class="img-round" src="img/barn-sko.jpg" alt="barn sko" />
+              </div>
+            </div>
           </div>
-          <div class="groups-img">
-            <img class="img-round" src="img/dam-sko.jpg" alt="dam skor" />
-            <img class="img-round" src="img/herr-sko.jpg" alt="herr sko" />
-            <img class="img-round" src="img/barn-sko.jpg" alt="barn sko" />
-          </div>
+          <img class="img img-right" src="img/child-shoes.jpg" alt="Barn sko" />
         </div>
-        <img class="img img-right" src="img/child-shoes.jpg" alt="Barn sko" />
-      </div>
-    </section>
-    <footer><p class="footer-text">All rights reserved &copy;</p></footer>
+      </section>
+    </main>
+    <div class="footer-container">
+      <footer>
+        <div class="footer-text-box">
+          <p class="footer-text">&copy; 2022 ECskor</p>
+        </div>
+        <div class="icons">
+          <a href="#" class="icon"
+            ><ion-icon class="icon instagram" name="logo-instagram"></ion-icon
+          ></a>
+          <a href="#" class="icon"
+            ><ion-icon class="icon facebook" name="logo-facebook"></ion-icon
+          ></a>
+          <a href="#" class="icon"
+            ><ion-icon class="icon twitter" name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+      </footer>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
