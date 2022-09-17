@@ -21,6 +21,10 @@ body {
   border-bottom: solid 1px c2beb4;
 }
 
+.header-logo {
+  width: 50%;
+}
+
 .main-nav-list {
   display: flex;
   list-style: none;
@@ -37,6 +41,7 @@ body {
   color: black;
   overflow: hidden;
   border: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .link:hover,
@@ -54,7 +59,7 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr 1fr;
   gap: 9.6rem;
   max-width: 130rem;
   margin: 0 auto;
@@ -63,7 +68,8 @@ body {
 
 h2 {
   align-self: center;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
+  text-align: center;
 }
 
 .latest-fashion {
@@ -86,6 +92,7 @@ h2 {
 .free-return {
   font-size: 2.3rem;
   margin-top: 2.2rem;
+  text-align: center;
 }
 
 .img-right {
@@ -100,18 +107,19 @@ h2 {
 
 .groups-img {
   display: flex;
-  gap: 5.8rem;
+  gap: 6.3rem;
   margin: 2rem 1rem 0rem 1rem;
 }
 
 .img {
-  width: 85%;
+  width: 100%;
 }
 
 .hero-text {
   font-size: 2.3rem;
   display: flex;
   flex-direction: column;
+  margin: 0rem 3rem 0rem 3rem;
 }
 
 .img-text:link,
@@ -124,6 +132,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: all 0.3s;
 }
 
 .img-text:hover,
@@ -143,6 +152,7 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s;
 }
 
 .img-round:hover {
