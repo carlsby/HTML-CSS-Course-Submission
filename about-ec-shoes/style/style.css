@@ -35,54 +35,14 @@ body{
 .container{
     position: relative;
 }
-.values-text-block{
-    position: absolute;
-    bottom: 400px;
-    left: 300px;
-    background-color: rgba(143, 141, 141, 0.493);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.values-text-block>a{
-    color: white;
-    text-decoration: none;
-}
 .image-box{
     text-align: center;
-}
-
-.staff-text-block{
-    position: absolute;
-    bottom: 400px;
-    left: 300px;
-    background-color: rgba(143, 141, 141, 0.493);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.staff-text-block>a{
-    color: white;
-    text-decoration: none;
 }
 
 .footer-container {
     max-width: 130vw;
     margin: 0 auto;
-}
-
-video{
-    padding-top: 0.5vh;
-    display: block;
-    margin: 0 auto;
-}
-
-.video-text-box{
-    position: absolute;
-    color: white;
-    background-color: rgba(143, 141, 141, 0.203);
 }
 
 footer {
