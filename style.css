@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+   body{
+     background-color: #E8DCD9;
+     min-height: 100vh; /*body över hela sidan*/
+     
+    }
+  
+  a{
+  color: white;
+  }
+  
+  
+  .header{
+    background-color:#B58F86;
+    position: fixed; /*förankrar menyn uppe på sidan*/
+    width: 100%; /*utvidgas*/
+    z-index: 3; /*så att man kan skrolla under menyn*/
+  }
+  
+  
+  /*inuti headern*/
+  .header ul{  
+  margin: 0;
+  padding: 0;
+  list-style: none; /*inga prickar*/
+  overflow: hidden; 
+  background-color: #C9ADA7;
+  
+  }
+  
+  .header ul a{
+    display: block; /*musen pekar endast på "blocket"*/
+    padding:15px 15px;
+    text-decoration: none; /*tar bort understrecken*/
+    letter-spacing: 3px;
+  }
+  
+  
+  .header ul a:hover{
+    background-color: #BF9E96;
+  }
+  
+  .header-logo{
+    width: 150px;
+    height: 150px;
+   
+  }
+  
+  /*loggan*/
+  .header .logo{ 
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+  
+  /*mobile menu*/
+  .header .menu{ 
+    clear:both; /*"tvingar" att ha menyn under loggan*/
+    max-height: 0; /*stänger menyn i mobilfunktionen*/
+    transition: max-height .2s ease-out; /*behövs för hamburgertransition*/
+  }
+  
+  .header .menu-icon{
+    padding: 30px 30px;
+    position: relative; /*sätts för att kunna sätta child till absolute*/
+    float: right;
+    cursor: pointer; /*pekar på burgaren*/
+  }
+  
+  .header .menu-icon .nav-icon{ /*the child*/
+  background: white;
+  display: block;
+  height: 2px;/*gör första strecket av burgaren*/
+  width: 20px; /*gör första strecket av burgaren*/
+  position: relative;
+  transition:background .2s ease-out; /*adderar detta för att kunna göra en rotation av burgaren sen*/
+  }
+  
+  /*addera övre och undre strecket i burgaren*/
+  .header .menu-icon .nav-icon:before{
+    background: white;
+    content:""; /*nothing*/
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px; /*gör att ena strecket hamnar under det andra strecket*/
+  
+  }
+  
+  /*addera övre och undre strecket i burgaren*/
+  .header .menu-icon .nav-icon:after{
+    background: white;
+    content:""; /*nothing*/
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px; /*gör att ena strecket hamnar över det mittersta strecket*/
+  }
+  
+  /*tar bort själva checkboxen*/
+  .header .menu-button{
+  display: none;
+  }
+  
+  
+  .header .menu-button:checked ~ .menu{
+    max-height: 300px; /*menyn expanderar*//*redan animerat pga transition*/
+  }
+  
+  /*krysset*/
+  .header .menu-button:checked ~ .menu-icon .nav-icon{
+  background: transparent; /*tar bort det mittersta strecket*/
+  }
+  
+  .header .menu-button:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg); /*roterar 45 grader*/
+    top:0;
+  }
+  
+  .header .menu-button:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top:0;
+  }
+  
+  @media (min-width:320px) and (max-width: 768px){
+    .header li{ /*list items*/
+      float:left;
+    }
+    .header li a{
+      padding: 20px 30px;
+    }
+    .header .menu{
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+  
+    .header .menu-icon{
+      display: none;
+    }
+  }
+  
+  .footer{
+    background-color: #C9ADA7;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   
+    
+  }
+  footer{
+    transition: width 2s, height 2s;
+    height: 80px;
+    width: 100%;
+  }
+  footer:hover{
+    width: 250px;
+    height: 150px;
+  }
+  
+  .container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    padding: 200px;
+  }
+  
+  
+  
+  .item{
+    background-color:white;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    
+  
+  }
+  
+  .image{
+    background-image: url('img/shoeplant.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 200px;
+    height: 50px;
+  }
+  
+  .image2{
+    background-image: url('img/paintedshoes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 200px;
+    height: 50px;
+  }
+  
