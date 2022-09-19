@@ -1,252 +1,198 @@
 *{
-    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: white;
+header {
     width: 100%;
-    color: black;
 }
+
+.about-image {
+    text-align: center;
+    background-image: url('../Images/pexels-creative-vix-9754.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2vw;
+    font-size: 5vh;
+    max-width: 100%;
+    height: auto;
+}
+
 body{
-    background-color: rgb(248, 248, 248);
-    padding-bottom: 50px;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 1rem;
-}
-a.nav{
-    position: relative;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1vw;
-    letter-spacing: 0,5px;
-    padding: 0 10px;
-}
-a.nav:after{
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-a.nav:hover:after{
-    width: 100%;
-}
-.image-flexbox{
-    position: relative;
-    padding: 1rem;
-    width: 80%;
-    margin-left: 18vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-}
-.staff-link{
-    position: absolute;
-    top: 51%;
-    left: 17%;
-    transform: translate(-50%, -50%);
-}
-.staff-link>a{
-    position: relative;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px black;
-    font-size: 3vw;
-    letter-spacing: 0,5px;
-    padding: 0 10px;
-}
-.staff-link>a:after{
-    content: "";
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-.staff-link>a:hover:after{
-    width: 100%;
-}
-.our-values-link{
-    position: absolute;
-    top: 42%;
-    left: 67%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-}
-.our-values-link>a{
-    position: relative;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px black;
-    font-size: 3vw;
-    letter-spacing: 2px;
-    padding: 0 10px;
-}
-.our-values-link>a:after{
-    content: "";
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-.our-values-link>a:hover:after{
-    width: 100%;
-}
-.about-us-section{
+
+.about-section{
     text-align: center;
-    font-size: 30px;
-    height: 225px;
-    background-image: url('../Images/pexels-guillaume-meurice-1591447.jpg');
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1rem;
+}
+
+.container{
+    position: relative;
+}
+.values-text-block{
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+    background-color: rgba(143, 141, 141, 0.493);
     color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    background-size: cover;
-    padding: 4vw;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.info-col{
+
+.values-text-block>a{
+    color: white;
+    text-decoration: none;
+}
+.image-box{
     text-align: center;
-    margin: auto;
-    width: 50%;
-    color: black;
-    padding: 1vw;
 }
-footer{
-    position: fixed;
-    left: 0;
+
+.staff-text-block{
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+    background-color: rgba(143, 141, 141, 0.493);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.staff-text-block>a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container {
+    max-width: 130vw;
+    margin: 0 auto;
+}
+
+video{
+    padding-top: 0.5vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-text-box{
+    position: absolute;
+    color: white;
+    background-color: rgba(143, 141, 141, 0.203);
+}
+
+footer {
     bottom: 0;
-    width: 100%;
+    border-top: 0.2vh solid #dee2e6;
+    padding: 2rem 0rem 2rem 0rem;
+    font-size: 1.5rem;
+    max-width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-text-box {
+    margin-left: 2rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+.icon {
+    width: 2.4rem;
     color: black;
-    padding: 6px;
+    margin-right: 1rem;
 }
-.ecshoesfooter{
-    float: left;
+
+.twitter:hover {
+    fill: #1da1f2;
 }
-.footertext{
-    text-align: center;
+
+.instagram:hover {
+    color: #fff;
+    background: #d6249f;
+    border-radius: 7px;
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
-.title{
-    color: rgb(65, 65, 65);
+
+.facebook:hover {
+    fill: #4267b2;
 }
-.about-image-section{
-  float: left;
-  margin-bottom: 4px;
-  margin: 3rem;
-  max-width: 100%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.card {
-    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    text-align: center;
-}
-@media screen and (max-width: 650px) {
-    .about-image-section{
-      width: 100%;
-      display: block;
+
+@media (min-width: 320px){
+    .values-text-block{
+        bottom: 140px;
+        left: 30px;
+        font-size: 17px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .staff-text-block{
+        bottom: 140px;
+        left: 163px;
+        font-size: 17px;
+        padding-left: 9px;
+        padding-right: 8px;
+    }
+    video{
+        width: 80%;
+    }
+    .video-text-box{
+        position: absolute;
+        top: 700px;
+        left: 100px;
     }
 }
-.button{
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    transition-duration: 0,4s;
-}
-.button:hover {
-    background-color: rgb(49, 49, 49);
-}
-.ourbrands{
-    text-align: center;
-    margin-top: 4vw;
-    margin-bottom: 0.5vw;
-    font-size: 2vw;
-}
-.slider{
-    width: 35vw;
-    height: 20vw;
-    background: url('../Images/adidas-slide.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    animation: slide 20s infinite;
-}
-.slider-links{
-    padding-top: 8vw;
-}
-.slider-links>a{
-    position: relative;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px black;
-    font-size: 2vw;
-    letter-spacing: 2px;
-    padding: 0 10px;
-}
-.slider-links>a:after{
-    content: "";
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-.slider-links>a:hover:after{
-    width: 100%;
-}
-@keyframes slide{
-    25%{
-        background: url('../Images/adidas-slide.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
+
+@media (min-width: 480px){
+    .values-text-block{
+        bottom: 160px;
+        left: 46px;
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    50%{
-        background: url('../Images/nike-slide.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .staff-text-block{
+        bottom: 160px;
+        left: 230px;
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    75%{
-        background: url('../Images/vans-slide.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+}
+
+@media (min-width: 768px){
+    .values-text-block{
+        bottom: 150px;
+        left: 110px;
+        font-size: 2rem;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    100%{
-        background: url('../Images/swc-slide.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .staff-text-block{
+        bottom: 150px;
+        left: 430px;
+        font-size: 2rem;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
