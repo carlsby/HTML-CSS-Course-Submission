@@ -79,6 +79,47 @@ body{
     color: rgba(255, 174, 0, 0.774)
 }
 
+.brands-section{
+    text-align: center;
+}
+
+.carousel-box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.carousel-caption{
+    background-color: rgba(61, 61, 61, 0.596);
+}
+
+.carousel-caption>a{
+    background:
+    linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    ),
+    linear-gradient(
+      to right,
+      rgb(255, 238, 0),
+      rgba(255, 174, 0, 0.774),
+      rgb(200, 90, 0)
+    );
+    color: rgb(255, 255, 255);
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+}
+
+.carousel-caption>a:hover{
+    background-size: 0 3px, 100% 3px;
+    color: rgba(255, 174, 0, 0.774)
+}
+
 .footer-container {
     max-width: 130vw;
     margin: 0 auto;
@@ -113,7 +154,6 @@ footer {
 .icon {
     width: 2.4rem;
     color: black;
-    margin-right: 1rem;
 }
 
 .twitter:hover {
