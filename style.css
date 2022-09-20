@@ -9,146 +9,38 @@
      min-height: 100vh; /*body över hela sidan*/
      
     }
-  
+    @media (min-width: 576px){
+body{
+    background-color: #B58F86;
+
+}
+}
+  @media(min-width: 768px){
+    body{
+        background-color: #C9ADA7;
+    }
+  }
+
+  @media(min-width: 992px){
+    body{
+        background-color: #E8DCD9;
+    }
+  }
+  @media(min-width: 1200px){
+    body{
+        background-color:#C9ADA7;
+    }
+  }
+
+  @media(min-width: 1400px){
+    body{
+        background-color: #E8DCD9;
+    }
+  }
   a{
   color: white;
   }
   
-  
-  .header{
-    background-color:#B58F86;
-    position: fixed; /*förankrar menyn uppe på sidan*/
-    width: 100%; /*utvidgas*/
-    z-index: 3; /*så att man kan skrolla under menyn*/
-  }
-  
-  
-  /*inuti headern*/
-  .header ul{  
-  margin: 0;
-  padding: 0;
-  list-style: none; /*inga prickar*/
-  overflow: hidden; 
-  background-color: #C9ADA7;
-  
-  }
-  
-  .header ul a{
-    display: block; /*musen pekar endast på "blocket"*/
-    padding:15px 15px;
-    text-decoration: none; /*tar bort understrecken*/
-    letter-spacing: 3px;
-  }
-  
-  
-  .header ul a:hover{
-    background-color: #BF9E96;
-  }
-  
-  .header-logo{
-    width: 150px;
-    height: 150px;
-   
-  }
-  
-  /*loggan*/
-  .header .logo{ 
-    float: left;
-    display: block;
-    font-size: 2em;
-    padding: 10px 20px;
-  }
-  
-  /*mobile menu*/
-  .header .menu{ 
-    clear:both; /*"tvingar" att ha menyn under loggan*/
-    max-height: 0; /*stänger menyn i mobilfunktionen*/
-    transition: max-height .2s ease-out; /*behövs för hamburgertransition*/
-  }
-  
-  .header .menu-icon{
-    padding: 30px 30px;
-    position: relative; /*sätts för att kunna sätta child till absolute*/
-    float: right;
-    cursor: pointer; /*pekar på burgaren*/
-  }
-  
-  .header .menu-icon .nav-icon{ /*the child*/
-  background: white;
-  display: block;
-  height: 2px;/*gör första strecket av burgaren*/
-  width: 20px; /*gör första strecket av burgaren*/
-  position: relative;
-  transition:background .2s ease-out; /*adderar detta för att kunna göra en rotation av burgaren sen*/
-  }
-  
-  /*addera övre och undre strecket i burgaren*/
-  .header .menu-icon .nav-icon:before{
-    background: white;
-    content:""; /*nothing*/
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    top: 5px; /*gör att ena strecket hamnar under det andra strecket*/
-  
-  }
-  
-  /*addera övre och undre strecket i burgaren*/
-  .header .menu-icon .nav-icon:after{
-    background: white;
-    content:""; /*nothing*/
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    top: -5px; /*gör att ena strecket hamnar över det mittersta strecket*/
-  }
-  
-  /*tar bort själva checkboxen*/
-  .header .menu-button{
-  display: none;
-  }
-  
-  
-  .header .menu-button:checked ~ .menu{
-    max-height: 300px; /*menyn expanderar*//*redan animerat pga transition*/
-  }
-  
-  /*krysset*/
-  .header .menu-button:checked ~ .menu-icon .nav-icon{
-  background: transparent; /*tar bort det mittersta strecket*/
-  }
-  
-  .header .menu-button:checked ~ .menu-icon .nav-icon:before{
-    transform: rotate(-45deg); /*roterar 45 grader*/
-    top:0;
-  }
-  
-  .header .menu-button:checked ~ .menu-icon .nav-icon:after{
-    transform: rotate(45deg);
-    top:0;
-  }
-  
-  @media (min-width:320px) and (max-width: 768px){
-    .header li{ /*list items*/
-      float:left;
-    }
-    .header li a{
-      padding: 20px 30px;
-    }
-    .header .menu{
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-  
-    .header .menu-icon{
-      display: none;
-    }
-  }
   
   .footer{
     background-color: #C9ADA7;
@@ -211,4 +103,41 @@
     padding: 200px;
     height: 50px;
   }
-  
+  .animated-icon2 span:nth-child(1) {
+    top: 0px;
+    }
+    
+    .animated-icon2 span:nth-child(2),
+    .animated-icon2 span:nth-child(3) {
+    top: 10px;
+    }
+    
+    .animated-icon2 span:nth-child(4) {
+    top: 20px;
+    }
+    
+    .animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
+    
+    .animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
