@@ -1,4 +1,9 @@
-.carousel-item{
-    height: 32rem;
-    width: 100%;
+.banner-image{
+    background-image: url('img/shoesforest.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    font-family: 'Poppins' , sans-serif;
 }
+  
