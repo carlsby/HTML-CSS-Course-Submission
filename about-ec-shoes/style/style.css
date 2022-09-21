@@ -7,7 +7,6 @@
 header {
     width: 100%;
 }
-
 .about-image {
     text-align: center;
     background-image: url('../Images/pexels-craig-adderley-1546898.jpg');
@@ -89,42 +88,10 @@ body{
     margin-right: auto;
     width: 30%;
 }
-
-.carousel-caption{
-    background-color: rgba(61, 61, 61, 0.596);
-}
-
-.carousel-caption>a{
-    background:
-    linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      rgb(255, 255, 255)
-    ),
-    linear-gradient(
-      to right,
-      rgb(255, 238, 0),
-      rgba(255, 174, 0, 0.774),
-      rgb(200, 90, 0)
-    );
-    color: rgb(255, 255, 255);
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-    text-decoration: none;
-}
-
-.carousel-caption>a:hover{
-    background-size: 0 3px, 100% 3px;
-    color: rgba(255, 174, 0, 0.774)
-}
-
 .footer-container {
     max-width: 130vw;
     margin: 0 auto;
 }
-
 footer {
     bottom: 0;
     border-top: 0.2vh solid #dee2e6;
@@ -135,31 +102,25 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
 .footer-flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .footer-text-box {
     margin-left: 2rem;
 }
-
 .icons {
     display: flex;
     gap: 1.5rem;
     margin-right: 2rem;
 }
-
 .icon {
     width: 2.4rem;
     color: black;
 }
-
 .twitter:hover {
     fill: #1da1f2;
 }
-
 .instagram:hover {
     color: #fff;
     background: #d6249f;
@@ -172,7 +133,6 @@ footer {
             #285aeb 90%);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
-
 .facebook:hover {
     fill: #4267b2;
 }
