@@ -1,17 +1,39 @@
-.banner-image{
-    background-image: url('img/shoesforest.jpg');
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
+.carousel-item{
+    height: 32rem;
+    color: white;
+    background: black;
+    position: relative;
     font-family: 'Poppins' , sans-serif;
-    position: fixed;
-    background-repeat: no-repeat;
+    font-size: 24px;
+  
+}
+
+.container{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom: 150px;
+
+
+    
+}
+ .overlay-image{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top: 0;
+
+    background-image: url('img/shoesforest.jpg');
     background-position: center;
     background-size: cover;
-
-
-
+    bottom: -90px;
+    
 }
-  
+
+
+.overlay-image2{
+    background-image: url('img/recycleshoes.jpg');
+}
 
