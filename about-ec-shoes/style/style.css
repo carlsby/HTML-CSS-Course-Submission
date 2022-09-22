@@ -60,11 +60,6 @@ body {
     margin-bottom: 2vw;
     font-size: 2vh;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 .image-container {
     float: left;
     width: 33.33%;
@@ -102,7 +97,6 @@ h4{
     color: black;
     background-color: rgba(41, 41, 41, 0.774);
 }
-
 .centered {
     position: absolute;
     top: 50%;
