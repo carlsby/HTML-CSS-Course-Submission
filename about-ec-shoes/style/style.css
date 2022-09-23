@@ -23,6 +23,11 @@ hr.image-devider{
 .col {
     padding-left: 400px;
 }
+.nav-link:hover{
+    font-size: 17px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
 .header-image {
     text-align: center;
     background-image: url('../Images/about-image.jpg');
@@ -31,7 +36,7 @@ hr.image-devider{
     background-position: center;
     background-size: cover;
     padding: 2vw;
-    font-size: 5vh;
+    font-size: 4vh;
     max-width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
@@ -76,24 +81,39 @@ body {
     margin-bottom: 2vw;
     font-size: 2vh;
 }
-.image-container {
-    float: left;
-    width: 33.33%;
+.image-container{
     position: relative;
     text-align: center;
     padding-bottom: 2rem;
+}
+.menu-image{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+.market-image{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
 }
 .flex-box{
     display: block;
     margin-right: auto;
     margin-left: 0;
-    
+}
+figcaption{
+    margin: 16px;
 }
 .value-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    height: auto;
+    border-radius: 10px;
 }
 .image-text{
     margin-top: 10px;
@@ -109,6 +129,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.25);
     padding-right: 15px;
+    border-radius: 10px;
 }
 .centered>a {
     background:
@@ -125,12 +146,30 @@ body {
     background-repeat: no-repeat;
     transition: background-size 400ms;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 2rem;
 }
 .centered>a:hover {
     background-size: 0 3px, 100% 3px;
     color: white;
     text-shadow: 2px 2px black;
+}
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+}
+.button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.button:hover{
+    color: #929292;
+    text-decoration: underline;
 }
 .brands-section {
     text-align: center;
@@ -139,7 +178,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 70%;
+    height: auto;
+}
+.carousel-inner{
+    border-radius: 10px;
 }
 .footer-container {
     max-width: 130vw;
@@ -215,6 +258,9 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
     }
+    .centered>a{
+        font-size: 3rem;
+    }
 }
 @media (min-width: 1024px) {
     .flex-box{
@@ -238,6 +284,24 @@ footer {
     .staff-emojis{
         width: 7%;
     }
+    .menu-image{
+        width: 90%;
+        padding: 5px;
+    }
+    .image-container{
+        float: left;
+        width: 33.33%;
+        position: relative;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .centered>a{
+        font-size: 2rem;
+    }
+    .carousel-box{
+        width: 50%;
+    }
+    
 }
 @media (min-width: 1440px) {
     .header-image{
@@ -269,6 +333,15 @@ footer {
     .staff-emojis{
         width: 5%;
     }
+    .carousel-box{
+        width: 35%;
+    }
+    .centered>a{
+        font-size: 3rem;
+    }
+    .menu-image{
+        width: 80%;
+    }
 }
 @media (min-width: 1680px){
     .value-image{
@@ -298,6 +371,3 @@ footer {
         width: 4%;
     }
 }
-
-    
-
