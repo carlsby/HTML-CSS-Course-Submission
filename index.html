@@ -9,6 +9,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+          
             <!--Bootstrap CSS-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
             <link rel="stylesheet" type="text/css" href="style.css"> 
@@ -17,32 +18,29 @@
         </head>
 
      <body>  
-
-      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        </ol>
+      <!--carousel-->
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="overlay-image">
-               
-          <div class="container">
+        <div class="carousel-item active" data-interval="8000">
+          <div class="overlay-image"></div>
+            <div class="container">
+              <div class="carousel-caption d-none d-md-block">
          <h1>EC-skor Blogg</h1>
+         <p>En blogg om DIY-projekt</p>
           </div>
         </div>
-        <div class="carousel-item"> 
+        </div>
+     
+        <div class="carousel-item" data-interval="5000"> 
           <div class="overlay-image2"></div>
-          <div class="container">
-            <h2>En blogg om DIY-projekt</h2>
-            <h3>Ge dina gamla skor ett nytt utseende</h3>
+         <div class="container">      
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Ge dina gamla skor ett nytt utseende</h2>
           </div>
         </div>
+       </div>
       </div>
       </div>
-
-  
-
       <!--JS, Popper, Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

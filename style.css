@@ -1,39 +1,61 @@
+
+
 .carousel-item{
-    height: 32rem;
+    height: 40rem;
     color: white;
     background: black;
+    background-size: cover;
     position: relative;
     font-family: 'Poppins' , sans-serif;
     font-size: 24px;
-  
+   
 }
 
 .container{
+   
     position: absolute;
     bottom:0;
     left:0;
     right:0;
-    padding-bottom: 150px;
-
-
-    
 }
+
+
  .overlay-image{
+    position:absolute;
+    left: 0;
+    right:0;
+    top: 0;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2726132689403886) 33%),
+    url('img/shoesforest.jpg');
+    background-position: center;
+    background-size: cover;
+    bottom: -90px;
+    
+ }
+.overlay-image2{
     position:absolute;
     bottom: 0;
     left: 0;
     right:0;
     top: 0;
-
-    background-image: url('img/shoesforest.jpg');
+    background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/recycleshoes.jpg');
     background-position: center;
     background-size: cover;
-    bottom: -90px;
-    
+
+}
+
+.carousel-caption{
+   left:0;
+   text-align: left;
+   padding: 20px;
+   padding-left: 200px;
 }
 
 
-.overlay-image2{
-    background-image: url('img/recycleshoes.jpg');
+.carousel-caption h2{
+margin: 0 -200px;
+text-align: right;
+
+
 }
 
