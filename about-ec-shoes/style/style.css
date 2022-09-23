@@ -102,24 +102,6 @@ body {
     margin-right: 40px;
     margin-left: 0;
 }
-h3{
-    text-decoration: underline;
-    text-align: center;
-}
-p{
-    font-size: 14px;
-}
-.button{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: bold;
-    padding-bottom: 8px;
-}
-.button:hover{
-    color: #929292;
-    text-decoration: underline;
-}
 .centered {
     position: absolute;
     top: 50%;
