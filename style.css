@@ -132,6 +132,9 @@ body{
     .burger, .toggle-menu{
         display: block; 
     }
+    .header{
+        padding: 10px 20px;
+    }
 .menu{
     justify-content: start;
     flex-direction: column;
