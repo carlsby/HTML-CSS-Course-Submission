@@ -173,6 +173,8 @@ body{
 
 }
 }
+
+@media(min-width: 991.98px){
 /*carousel*/
 .carousel-item{
     height: 40rem;
@@ -233,3 +235,45 @@ text-align: right;
 
 }
 
+}
+@media(max-width: 991.98px){
+.header-logo{
+    display: block;
+}
+
+.header-image{
+position:absolute;
+bottom: 0;
+left: 0;
+right:0;
+top: 0;
+background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/mobileheader.jpg');
+background-position: center;
+background-size: cover;
+height: 20rem;
+}
+
+.mobileheader{
+    position: relative;
+}
+
+
+
+
+
+h1{
+    color:white;
+    text-align: left;
+    margin: 0 40px;
+    position: absolute;
+    bottom: 40px;
+    font-size: 24px;
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 3px;  
+}
+
+
+.burger, .burger:after, .burger:before{
+    background: black;
+}
+}
