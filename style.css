@@ -23,15 +23,17 @@ body{
     margin:0;
     padding:0;
 }
-
-.logo a{
-    display:block;
+/*loggan*/
+.header-logo{
+    width: 150px;
+    height: 20px;
 
 }
 
-.logo a img{
-    display: block;
-    width: 100%;
+.header .logo{
+   float: left;
+   display: block;
+   padding: 10px; 
 }
 
 .navigation{
@@ -49,8 +51,6 @@ body{
     transition: 0.5s;
     text-transform: uppercase;
     letter-spacing: 3px;
-
-   
 }
 
 .menu li{
@@ -65,11 +65,13 @@ body{
     font-size: 18px;
     line-height: 1;
     transition: 0.3s;
+ 
 }
 
 .menu li a:hover{
     box-shadow: 500px 0 0 #eddbcb inset;
     padding: 35px 25px 45px 25px;
+    opacity: 0.8;
 }
 
 .burger{
@@ -140,8 +142,9 @@ body{
         display: block; 
     }
     .header{
-        padding: 10px 20px;
+        padding:20px;
     }
+
 .menu{
     justify-content: start;
     flex-direction: column;
@@ -152,19 +155,24 @@ body{
     background: white;
     width: 300px;
     height: 100%;
-    opacity: 0.5;
+   
+ }    
+
+ ul.menu{
     padding-top: 65px;
+    opacity: 0.5;
+ }
     
-}
 .menu li{
     width: 100%;
+     
+    
 }
 .menu li a {
-    padding: 30px;
     font-size: 20px;
-}
-}
 
+}
+}
 /*carousel*/
 .carousel-item{
     height: 40rem;
