@@ -112,16 +112,34 @@ body{
     width: 18rem;
     padding: 10px;
  }
+ .card1:hover{
+    background-color: darkgrey;
+    width: 20rem;
+    padding: 10px;
+    transition: .5s;
+ }
  
  .card2{
     background-color: darkgrey;
     width: 18rem;
     padding: 10px;
  }
+ .card2:hover{
+    background-color: darkgrey;
+    width: 20rem;
+    padding: 10px;
+    transition: .5s;
+ }
  .card3{
     background-color: darkgrey;
     width: 18rem;
     padding: 10px;
+ }
+ .card3:hover{
+    background-color: darkgrey;
+    width: 20rem;
+    padding: 10px;
+    transition: .5s;
  }
 
  footer{
