@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sneaker store">
+    <meta name="keywords" content="Sneakers, Skatewear, Shoes, women shoes, men shoes, skateboard shoes">
+    <meta name="author" content="Carl Andersson">
+    <title>EC Skor | Om Oss</title>
+    <link rel="icon" type="image/x-icon" href="Images/ec-favicon.png">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/checkbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/ECskor.svg" alt="Logo" width="100" height="80" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Produkter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="about.html">Om Oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Kontakta Oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Blogg</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+    <form action="underconstruction.html" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Gå med i EC-Kundklubb</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="phone-nmbr"><b>Telefonnumer *</b></label>
+            <input type="text" placeholder="+46" name="phone-nmbr" required
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+
+            <label for="email"><b>E-postadress *</b></label>
+            <input type="text" placeholder="Skriv in din E-postadress" name="email" required>
+
+            <label for="fname"><b>Förnamn *</b></label>
+            <input type="text" placeholder="Skriv in ditt förnamn" name="fname" required>
+
+            <label for="lname"><b>Efternamn *</b></label>
+            <input type="text" placeholder="Skriv in dit efternamn" name="lname" required>
+
+            <label for="adress"><b>Adress</b></label>
+            <input type="text" placeholder="Skriv in din adress" name="adress">
+
+            <label for="zip-code"><b>Postnummer</b></label>
+            <input type="text" placeholder="Skriv in ditt postnummer" name="zip-code">
+
+            <label for="city"><b>Stad</b></label>
+            <input type="text" placeholder="Skriv in din stad" name="city">
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+            </label>
+            <p>Ett medlemskap i EC-Kundklubb ger dig rabatter på utvalda medlemsprodukter och spännande erbjudanden. Du kommer också att få tips om nyheter och råd om dina produkter.
+                Genom att gå med i EC-Kundklubb accepterar jag att EC Skor kan kontakta mig elektronisk (tex. via sms och e-post),
+                telefon och post med personliga erbjudanden och annan relevant information. EC Skor kan samla in och analysera information om mig och mitt kundförhållande,
+                bland annat för att skapa en kundprofil, ge mig relevant information och bättre service. Jag kan när som helst välja att gå ur EC-Kundklubb.</p>
+
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Bli medlem</button>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+
+
+
+
+    <div class="footer-container">
+        <footer>
+            <div class="footer-text-box">
+                <p class="footer-text">&copy; 2022 ECskor</p>
+            </div>
+            <div class="icons">
+                <a href="https:/www.instagram.com" class="icon">
+                    <ion-icon class="icon instagram" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https:/www.facebook.com" class="icon">
+                    <ion-icon class="icon facebook" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https:/www.twitter.com" class="icon">
+                    <ion-icon class="icon twitter" name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+            <a class="newsletter-link" href="newsletter.html">Prenumerera på vårat nyhetsbrev!</a>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sneaker store">
+    <meta name="keywords" content="Sneakers, Skatewear, Shoes, women shoes, men shoes, skateboard shoes">
+    <meta name="author" content="Carl Andersson">
+    <title>EC Skor | Om Oss</title>
+    <link rel="icon" type="image/x-icon" href="Images/ec-favicon.png">
+    <link rel="stylesheet" href="Style/underconstruction.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="my-block">
+        <a class="back-link" href="about.html"><img src="Images/arrow_back_FILL0_wght400_GRAD0_opsz48 (2).svg" >Gå tillbaka</a>
+        <h1>Denna sida är tyvärr inte riktigt färdig</h1>
+        <p>Vänligen kika tillbaka senare!</p>
+        <img src="images/underconstruction-image.png">
+        <p id="demo"></p>
+        <script>
+        var countDownDate = new Date("Nov 5, 2022 15:37:25").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+     </div>
+</body>

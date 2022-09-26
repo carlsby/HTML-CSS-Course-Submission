@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(29, 27, 27, 0.568) !important;
+}
+
+body {
+    display: table;
+}
+
+.my-block {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
+.back-link{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.back-link:hover{
+    text-decoration: underline;
+    color: gray;
+}

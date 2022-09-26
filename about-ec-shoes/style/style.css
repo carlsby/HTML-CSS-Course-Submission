@@ -23,8 +23,14 @@ hr.image-devider{
 .col {
     padding-left: 400px;
 }
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    display: block;
+}
 .nav-link:hover{
-    font-size: 17px;
+    text-decoration: underline;
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -129,7 +135,6 @@ figcaption{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.25);
-    padding-right: 15px;
     border-radius: 10px;
 }
 .centered>a {
@@ -157,6 +162,7 @@ figcaption{
 h3{
     text-decoration: underline;
     text-align: center;
+    padding-right: 30px;
 }
 p{
     font-size: 14px;
@@ -205,19 +211,19 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 .footer-text-box {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .footer-text{
-    font-size: 18px;
+    font-size: 14px;
 }
 .icons {
     display: flex;
     gap: 1.5rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
 }
 .icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     color: black;
 }
 .twitter:hover {
@@ -237,6 +243,18 @@ footer {
 }
 .facebook:hover {
     fill: #4267b2;
+}
+.newsletter-link{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+}
+.newsletter-link:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: 0.3s;
+    color: rgb(46, 46, 46);
 }
 
 @media (min-width: 768px) {
@@ -266,6 +284,16 @@ footer {
     }
     figcaption{
         padding: 0 100px;   
+    }
+    .icons{
+        margin-left: 10rem;
+    }
+    .icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .newsletter-link{
+        margin-left: 6rem;
     }
 }
 @media (min-width: 1024px) {
@@ -309,6 +337,9 @@ footer {
     }
     figcaption{
         padding: 0 130px;
+    }
+    .icons{
+        margin-left: 13rem;
     }
 }
 @media (min-width: 1440px) {
@@ -356,6 +387,12 @@ footer {
     }
     .market-image{
         width: 30%;
+    }
+    .newsletter-link{
+        font-size: 16px;
+    }
+    .footer-text{
+        font-size: 16px;
     }
 }
 @media (min-width: 1680px){
