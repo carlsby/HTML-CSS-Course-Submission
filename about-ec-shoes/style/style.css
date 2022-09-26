@@ -106,6 +106,7 @@ body {
 }
 figcaption{
     margin: 16px;
+    font-size: 14px;
 }
 .value-image{
     display: block;
@@ -261,6 +262,12 @@ footer {
     .centered>a{
         font-size: 3rem;
     }
+    .market-image{
+        width: 50%;
+    }
+    figcaption{
+        padding: 0 100px;   
+    }
 }
 @media (min-width: 1024px) {
     .flex-box{
@@ -301,7 +308,9 @@ footer {
     .carousel-box{
         width: 50%;
     }
-    
+    figcaption{
+        padding: 0 130px;
+    }
 }
 @media (min-width: 1440px) {
     .header-image{
@@ -342,6 +351,13 @@ footer {
     .menu-image{
         width: 80%;
     }
+    figcaption{
+        padding: 0 330px;
+        font-size: 16px;
+    }
+    .market-image{
+        width: 30%;
+    }
 }
 @media (min-width: 1680px){
     .value-image{
@@ -369,5 +385,8 @@ footer {
     }
     .staff-emojis{
         width: 4%;
+    }
+    figcaption{
+        padding: 0 532px;
     }
 }
