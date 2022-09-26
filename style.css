@@ -60,7 +60,13 @@
     
 }
 
-
+.profile{
+    background-image: url('img/profile.svg');
+   background-size:contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 100px;
+}
 
 
 body{
