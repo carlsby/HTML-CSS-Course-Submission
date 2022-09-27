@@ -17,10 +17,9 @@
 }
 
 
-
 .card{
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
     text-align: center; 
 }
@@ -66,11 +65,7 @@ padding: 5px;
     clear: both;
 }
 
-.footer{
-    padding: 20px;
-    margin: 20px;
-    background-color:white;
-}
+
 
 .footer-card h4{
     font-size: 16px;
@@ -88,7 +83,6 @@ padding: 5px;
     background-size: 100px;
     background-position: right 8px;
 }
-
 
 .material-symbols-outlined{
     float: right;
@@ -383,8 +377,17 @@ height: 20rem;
 
 .row{
     flex-direction: column;
+
 }
 
+.leftcolumn, .rightcolumn{
+    width: 100%;
+}
+
+.imagepost2{
+    
+    margin: 20px;
+}
 h1{
     color:white;
     text-align: left;
