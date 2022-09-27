@@ -78,7 +78,20 @@ padding: 5px;
 
 .footer-card h5{ 
     text-align: right;
+    
 }
+
+.footer-card{
+    background-image: url('img/ec-skor.svg');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right 8px;
+   
+
+  
+}
+
+
 .material-symbols-outlined{
     float: right;
     padding-right: 50px;
