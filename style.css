@@ -25,7 +25,9 @@
 
 .material-symbols-outlined{
     color: black;
+  
 }
+
 
 .material-symbols-outlined:hover{
 color:#eddbcb;
@@ -74,6 +76,13 @@ padding: 5px;
     text-align: left;
 }
 
+.footer-card h5{ 
+    text-align: right;
+}
+.material-symbols-outlined{
+    float: right;
+    padding-right: 50px;
+}
 .imagepost{
     background-image: url('img/lemonshoes.jpg');
     background-size: cover;
