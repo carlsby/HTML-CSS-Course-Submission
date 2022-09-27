@@ -95,7 +95,7 @@ padding: 5px;
     padding-right: 50px;
 }
 .imagepost{
-    background-image: url('img/lemonshoes.wedp');
+    background-image: url('img/lemonshoes.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ padding: 5px;
 }
 
 .imagepost2{
-    background-image: url('img/shoeplant.jpg');
+    background-image: url('img/shoeplant.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -324,7 +324,7 @@ body{
     right:0;
     top: 0;
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2726132689403886) 33%),
-    url('img/shoesforest.jpg');
+    url('img/shoesforest.webp');
     background-position: center;
     background-size: cover;
     bottom: -90px;
@@ -336,7 +336,7 @@ body{
     left: 0;
     right:0;
     top: 0;
-    background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/recycleshoes.jpg');
+    background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/recycleshoes.webp');
     background-position: center;
     background-size: cover;
 
@@ -370,7 +370,7 @@ bottom: 0;
 left: 0;
 right:0;
 top: 0;
-background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/mobileheader.jpg');
+background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(149,154,154,0.09894380115327384) 32%), url('img/mobileheader.webp');
 background-position: center;
 background-size: cover;
 height: 20rem;
