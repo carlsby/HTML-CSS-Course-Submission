@@ -13,8 +13,10 @@
 .rightcolumn{
     float: left;
     width: 25%;
-    padding-left: 20px;
+    background-position: center;
 }
+
+
 
 .card{
     background-color: white;
@@ -66,9 +68,8 @@ padding: 5px;
 
 .footer{
     padding: 20px;
-    background: white;
     margin: 20px;
-
+    background-color:white;
 }
 
 .footer-card h4{
@@ -86,9 +87,6 @@ padding: 5px;
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: right 8px;
-   
-
-  
 }
 
 
@@ -97,7 +95,7 @@ padding: 5px;
     padding-right: 50px;
 }
 .imagepost{
-    background-image: url('img/lemonshoes.jpg');
+    background-image: url('img/lemonshoes.wedp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +116,7 @@ padding: 5px;
 
 .profile{
    background-image: url('img/profile.svg');
-   background-size:contain;
+   background-size:150px;
    background-position: center;
    background-repeat: no-repeat;
    padding: 100px;
@@ -381,6 +379,10 @@ height: 20rem;
 .mobileheader{
     position: relative;
     height: 20rem;
+}
+
+.row{
+    flex-direction: column;
 }
 
 h1{
