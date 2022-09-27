@@ -37,7 +37,7 @@ padding: 5px;
 #social-icons div{
     display: flex; 
     align-items: center;
-    margin: .8em;
+    margin: 1.8em;
 }
  
 .card input[type=text]{
@@ -64,12 +64,16 @@ padding: 5px;
 
 .footer{
     padding: 20px;
-    text-align: center;
     background: white;
-    margin-top: 20px;
-    
-    
+    margin: 20px;
+
 }
+
+.footer-card h4{
+    font-size: 16px;
+    text-align: left;
+}
+
 .imagepost{
     background-image: url('img/lemonshoes.jpg');
     background-size: cover;
@@ -91,7 +95,7 @@ padding: 5px;
 }
 
 .profile{
-    background-image: url('img/profile.svg');
+   background-image: url('img/profile.svg');
    background-size:contain;
    background-position: center;
    background-repeat: no-repeat;
