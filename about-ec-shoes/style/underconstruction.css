@@ -1,33 +1,32 @@
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: rgba(29, 27, 27, 0.568) !important;
-}
-
-body {
-    display: table;
+*{
+    background-image: url('../Images/404pagenotfound.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .my-block {
+    margin-top: 100px;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    margin-left: 30px;
 }
 
-h1{
-    color: black;
+.underconstruction-list{
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 260px;
 }
-p{
-    color: black;
-}
-.back-link{
-    font-size: 40px;
+
+.underconstruction-link{
     text-decoration: none;
     color: black;
+    background-color: rgba(0, 0, 0, 0.041);
+    border-radius: 5px;
 }
-.back-link:hover{
-    text-decoration: underline;
-    color: gray;
+
+.underconstruction-link:hover{
+    font-size: 24px;
+    transition: 0.3s;
+    color: #000000;
 }
