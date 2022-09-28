@@ -60,7 +60,8 @@ ul.breadcrumb{
     text-align: center;
     padding: 10px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: rgb(33, 37, 41);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 
@@ -103,17 +104,16 @@ ul.breadcrumb li{
 
 ul.breadcrumb li+li:before{
     padding: 8px;
-    color: #000;
     content: ">\00a0";
 }
 
 ul.breadcrumb li a{
-    color: #929292;
+    color: #dfdfdf;
     text-decoration: none;
 }
 
 ul.breadcrumb li a:hover{
-    color: #000;
+    color: rgb(145, 145, 145);
 }
 
 .text-section{
@@ -211,6 +211,7 @@ h3{
 p{
     font-size: 14px;
 }
+
 .button{
     text-decoration: none;
     color: #000;
@@ -311,7 +312,7 @@ footer{
     margin-left: 1rem;
 }
 
-input[type=password],input[type=text]{
+input[type=text]{
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -320,9 +321,8 @@ input[type=password],input[type=text]{
     background: #f1f1f1;
 }
 
-input[type=password]:focus,input[type=text]:focus{
-    background-color: #ddd;
-    outline: 0;
+.checkbox{
+    margin-bottom: 10px;
 }
 
 hr{
@@ -346,7 +346,9 @@ button:hover{
 }
 
 .signupbtn{
-    float: left; width:50%;
+    float: left;
+    width:50%;
+    background-color: rgb(33, 37, 41);
 }
 
 .container{

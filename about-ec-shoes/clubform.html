@@ -49,52 +49,58 @@
         </div>
     </nav>
 </header>
+
 <body>
     <ul class="breadcrumb">
         <li><a href="about.html">Om EC Skor</a></li>
         <li>Nyhetsbrev</li>
     </ul>
     <div class="container">
-    <form action="underconstruction.html" style="border:1px solid #ccc">
-        <div class="container">
-            <h1>Gå med i EC-Kundklubb</h1>
-            <p>Fyll gärna i formuläret för att skapa ett konto hos oss.</p>
-            <hr>
+        <form action="underconstruction.html" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Gå med i EC-Kundklubb</h1>
+                <p>Fyll gärna i formuläret för att skapa ett konto hos oss.</p>
+                <hr>
 
-            <label for="phone-nmbr"><b>Telefonnumer *</b></label>
-            <input type="text" placeholder="+46" name="phone-nmbr" required
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <label for="phone-nmbr"><b>Telefonnumer *</b></label>
+                <input type="text" placeholder="+46" name="phone-nmbr" required
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
 
-            <label for="email"><b>E-postadress *</b></label>
-            <input type="text" placeholder="Skriv in din E-postadress" name="email" required>
+                <label for="email"><b>E-postadress *</b></label>
+                <input type="text" placeholder="Skriv in din E-postadress" name="email" required>
 
-            <label for="fname"><b>Förnamn *</b></label>
-            <input type="text" placeholder="Skriv in ditt förnamn" name="fname" required>
+                <label for="fname"><b>Förnamn *</b></label>
+                <input type="text" placeholder="Skriv in ditt förnamn" name="fname" required>
 
-            <label for="lname"><b>Efternamn *</b></label>
-            <input type="text" placeholder="Skriv in dit efternamn" name="lname" required>
+                <label for="lname"><b>Efternamn *</b></label>
+                <input type="text" placeholder="Skriv in ditt efternamn" name="lname" required>
 
-            <label for="adress"><b>Adress</b></label>
-            <input type="text" placeholder="Skriv in din adress" name="adress">
+                <label for="adress"><b>Adress</b></label>
+                <input type="text" placeholder="Skriv in din adress" name="adress">
 
-            <label for="zip-code"><b>Postnummer</b></label>
-            <input type="text" placeholder="Skriv in ditt postnummer" name="zip-code">
+                <label for="zip-code"><b>Postnummer</b></label>
+                <input type="text" placeholder="Skriv in ditt postnummer" name="zip-code">
 
-            <label for="city"><b>Stad</b></label>
-            <input type="text" placeholder="Skriv in din stad" name="city">
+                <label for="city"><b>Stad</b></label>
+                <input type="text" placeholder="Skriv in din stad" name="city">
 
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-            </label>
-            <p>Ett medlemskap i EC-Kundklubb ger dig rabatter på utvalda medlemsprodukter och spännande erbjudanden. Du kommer också att få tips om nyheter och råd om dina produkter.
-                Genom att gå med i EC-Kundklubb accepterar jag att EC Skor kan kontakta mig elektronisk (tex. via sms och e-post),
-                telefon och post med personliga erbjudanden och annan relevant information. EC Skor kan samla in och analysera information om mig och mitt kundförhållande,
-                bland annat för att skapa en kundprofil, ge mig relevant information och bättre service. Jag kan när som helst välja att gå ur EC-Kundklubb.</p>
+                <label class="checkbox">
+                    <input type="checkbox" name="checkbox" value="Geeks">
+                    Ett medlemskap i Elgigantens kundklubb ger dig rabatter på utvalda medlemsprodukter och spännande
+                    erbjudanden. Du kommer också att få tips om nyheter och råd om dina produkter.
+                </label>
 
-            <div class="clearfix">
-                <button type="submit" class="signupbtn">Bli medlem</button>
+                <p class="club-text">Genom att gå med i EC-Kundklubb accepterar jag att EC Skor kan kontakta mig elektronisk (tex. via sms
+                    och e-post),
+                    telefon och post med personliga erbjudanden och annan relevant information. EC Skor kan samla in och
+                    analysera information om mig och mitt kundförhållande,
+                    bland annat för att skapa en kundprofil, ge mig relevant information och bättre service. Jag kan när
+                    som helst välja att gå ur EC-Kundklubb.</p>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Bli medlem</button>
+                </div>
             </div>
-        </div>
     </div>
     </form>
     <div class="footer-container">
