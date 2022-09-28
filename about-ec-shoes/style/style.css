@@ -241,6 +241,16 @@ p{
     border-radius: 10px;
 }
 
+.carousel-control-next-icon{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.carousel-control-prev-icon{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
 .footer-container{
     max-width: 130vw;
     margin: 0 auto;
@@ -449,13 +459,14 @@ button:hover{
         font-size: 2rem;
     }
     .carousel-box{
-        width: 50%;}
-        figcaption{
+        width: 50%;
+    }
+    figcaption{
             padding: 0 130px;
-        }
-        .icons{
+    }
+    .icons{
             margin-left: 13rem;
-        }
+    }
     }
     
     @media (min-width:1440px){
