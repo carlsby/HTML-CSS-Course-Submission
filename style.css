@@ -19,7 +19,7 @@
 
 .card{
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     margin-top: 20px;
     text-align: center; 
 }
@@ -94,17 +94,19 @@ padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 200px;
+    height: 300px;
+   
+ 
     
 }
 
 .imagepost2{
-    background-image: url('img/shoeplant.webp');
+    background-image: url('img/shoeplant2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 200px;
+    height: 300px;
     
 }
 
@@ -384,9 +386,7 @@ height: 20rem;
     width: 100%;
 }
 
-.imagepost2{
-    
-    margin: 20px;
+
 }
 h1{
     color:white;
@@ -404,4 +404,10 @@ h1{
 }
 
 
+@media(max-width:575.98){
+
+    .imagepost2{
+    background-image: url('img/shoeplant.webp');
+        font-weight: 300px;
 }
+
