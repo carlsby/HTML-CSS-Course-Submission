@@ -8,12 +8,12 @@
 
 .leftcolumn{
     float: left;
-    width: 75%;
+    width: 70%;
 }
 .rightcolumn{
     float: left;
-    width: 25%;
-    background-position: center;
+    width: 30%;
+   
 }
 
 
@@ -26,7 +26,6 @@
 
 .material-symbols-outlined{
     color: black;
-  
 }
 
 
@@ -94,10 +93,7 @@ padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
-   
- 
-    
+    height: 300px; 
 }
 
 .imagepost2{
@@ -106,8 +102,7 @@ padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
-    
+    height: 300px;  
 }
 
 .profile{
@@ -115,7 +110,7 @@ padding: 5px;
    background-size:150px;
    background-position: center;
    background-repeat: no-repeat;
-   padding: 100px;
+   height: 300px;
 }
 
 
@@ -343,17 +338,22 @@ body{
    text-align: left;
    padding: 20px;
    padding-left: 200px;
-   font-family: 'Poppins' , sans-serif;
+   
 }
 
 
 .carousel-caption h2{
 margin: 0 -200px;
 text-align: right;
+font-size: 24px;
+font-family: 'Poppins' , sans-serif;
+letter-spacing: 3px;
+}
+.imagepost, .imagepost2{
+    height: 500px;
+
 
 }
-
-
 }
 @media(max-width: 991.98px){
 .header-logo{
@@ -386,8 +386,11 @@ height: 20rem;
     width: 100%;
 }
 
-
+.burger, .burger:after, .burger:before{
+    background: black;   
 }
+}
+
 h1{
     color:white;
     text-align: left;
@@ -397,17 +400,4 @@ h1{
     font-size: 24px;
     font-family: 'Poppins' , sans-serif;
     letter-spacing: 3px;  
-}
-
-.burger, .burger:after, .burger:before{
-    background: black;   
-}
-
-
-@media(max-width:575.98){
-
-    .imagepost2{
-    background-image: url('img/shoeplant.webp');
-        font-weight: 300px;
-}
 }
