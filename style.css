@@ -34,12 +34,18 @@ color:#eddbcb;
 }
 #social-icons a{
 padding: 5px;
+
 }
 
-#social-icons div{
+#social-icons div{ 
     display: flex; 
     align-items: center;
     margin: 1.8em;
+    
+}
+.pinterest, .instagram, .facebook, .linkedin{
+    width: 20px;
+    height: 30px; 
 }
  
 .card input[type=text]{
@@ -111,6 +117,7 @@ padding: 5px;
    background-position: center;
    background-repeat: no-repeat;
    height: 300px;
+   width: 100%;
 }
 
 
