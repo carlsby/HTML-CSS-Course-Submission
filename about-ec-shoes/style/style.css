@@ -252,7 +252,7 @@ p{
 }
 
 .footer-container{
-    max-width: 130vw;
+    max-width: 110vw;
     margin: 0 auto;
 }
 
@@ -285,7 +285,7 @@ footer{
 .icons{
     display: flex;
     gap: 1.5rem;
-    margin-left: 3rem;
+    margin-left: 10px;
 }
 
 .icon{
@@ -378,9 +378,18 @@ button:hover{
     color: #2e2e2e;
 }
 
-@media screen and (max-width:300px){
+@media (max-width:300px){
     .signupbtn{
         width: 100%;
+    }
+}
+
+@media (min-width:425px){
+    .newsletter-link{
+        margin-left: 70px;
+    }
+    .icons{
+        margin-left: 3.2rem;
     }
 }
 
@@ -413,14 +422,17 @@ button:hover{
         padding: 0 100px;
     }
     .icons{
-        margin-left: 10rem;
+        margin-left: 83px;
     }
     .icon{
         width: 2rem;
         height: 2rem;
     }
+    .footer-container{
+        margin-left: 0;
+    }
     .newsletter-link{
-        margin-left: 6rem;
+        margin-left: 70px;
     }
 }
 
@@ -462,94 +474,98 @@ button:hover{
         width: 50%;
     }
     figcaption{
-            padding: 0 130px;
+        padding: 0 130px;
+    }
+}
+    
+@media (min-width:1440px){
+    .header-image{
+        font-size: 7vh;
+    }
+    .text-section{
+        font-size: 1.2rem;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .value-image{
+        width: 30%;
+        margin-left: 250px;
+    }
+    .image-text{
+        margin-right: 400px;
+        margin-left:0;
+    }
+    p{
+        font-size: 1rem;
+    }
+    hr.image-devider{
+        max-width: 55%;
+    }
+    .row{
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+    .staff-emojis{
+        width: 5%;
+    }
+    .carousel-box{
+        width: 35%;
+    }
+    .centered>a{
+        font-size: 3rem;
+    }
+    .menu-image{
+        width: 80%;
+    }
+    figcaption{
+        padding: 0 330px;
+        font-size: 16px;
+    }
+    .market-image{
+        width: 30%;
+    }
+    .newsletter-link{
+    font-size: 16px;
+    }
+    .footer-text{
+        font-size: 16px;
     }
     .icons{
-            margin-left: 13rem;
+        margin-left: 8.5rem;
     }
+}
+
+@media (min-width:1680px){
+    .value-image{
+        width: 20%;
+        margin-left: 450px;
     }
-    
-    @media (min-width:1440px){
-        .header-image{
-            font-size: 7vh;
-        }
-        .text-section{
-            font-size: 1.2rem;
-            margin-left: 150px;
-            margin-right: 150px;
-        }
-        .value-image{
-            width: 30%;
-            margin-left: 250px;
-        }
-        .image-text{
-            margin-right: 400px;
-            margin-left:0;
-        }
-        p{
-            font-size: 1rem;
-        }
-        hr.image-devider{
-            max-width: 55%;
-        }
-        .row{
-            padding-left: 400px;
-            padding-right: 400px;
-        }
-        .staff-emojis{
-            width: 5%;
-        }
-        .carousel-box{
-            width: 35%;
-        }
-        .centered>a{
-            font-size: 3rem;
-        }
-        .menu-image{
-            width: 80%;
-        }
-        figcaption{
-            padding: 0 330px;
-            font-size: 16px;
-        }
-        .market-image{
-            width: 30%;
-        }
-        .newsletter-link{
-            font-size: 16px;
-        }
-        .footer-text{
-            font-size: 16px;
-        }
-    
-    }@media (min-width:1680px){
-        .value-image{
-            width: 20%;
-            margin-left: 450px;
-        }
-        hr.image-devider{
-            max-width: 45%;
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-        .image-text{
-            margin-right: 500px;
-        }
-        .text-section{
-            margin-left: 500px;
-            margin-right: 500px;
-        }
-        hr.solid{
-            max-width: 45%;
-        }
-        .row{
-            padding-left: 600px;
-            padding-right:600px;
-        }
-        .staff-emojis{
-            width: 4%;
-        }
-        figcaption{
-            padding: 0 532px;
-        }
+    hr.image-devider{
+        max-width: 45%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
+    .image-text{
+        margin-right: 500px;
+    }
+    .text-section{
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+    hr.solid{
+        max-width: 45%;
+    }
+    .row{
+        padding-left: 600px;
+        padding-right:600px;
+    }
+    .staff-emojis{
+        width: 4%;
+    }
+    figcaption{
+        padding: 0 532px;
+    }
+    .icons{
+        margin-left: 7rem;
+    }
+}
