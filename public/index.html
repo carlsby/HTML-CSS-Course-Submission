@@ -9,15 +9,22 @@
       content="ECskor en skobutik för alla, shoes store for everyone"
     />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="queries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
+    
     <title>ECskor | Hem</title>
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
         <a class="logo" href="index.html"
-          ><img class="header-logo" src="img/ECSKOR.svg" alt="ECSkor Logo"
+          ><img
+            class="header-logo"
+            src="assets/ECskor.svg"
+            width="100%"
+            height="100%"
+            alt="ECSkor Logo"
         /></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label for="menu-btn" class="menu-icon"
@@ -37,12 +44,37 @@
     </header>
     <main>
       <section class="section-hero">
-        <div class="hero">
-          <img
-            class="img"
-            src="img/woman-shoes.jpg"
-            alt="kvinna som tar på sig röda skor"
-          />
+        <div class="container">
+          <div
+          id="carouselExampleSlidesOnly"
+          class="karusell carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img d-block w-100 image-scale"
+
+                src="assets/carousel-kid.webp"
+                alt="Sko för barn"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img d-block w-100 image-scale"
+                src="assets/carousel-man.webp"
+                alt="Sko för män, märke nike"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img d-block w-100 image-scale"
+                src="assets/carousel-woman.webp"
+                alt="Dam sko med högklack"
+              />
+            </div>
+          </div>
+          </div>
           <div class="hero-text">
             <h2>Välkommen till ECskor</h2>
 
@@ -79,22 +111,40 @@
                 ></a>
               </div>
               <div class="groups-img">
-                <img class="img-round" src="img/dam-sko.jpg" alt="dam skor" />
-                <img class="img-round" src="img/herr-sko.jpg" alt="herr sko" />
-                <img class="img-round" src="img/barn-sko.jpg" alt="barn sko" />
+                <img
+                  class="img-round"
+                  src="assets/dam-sko.webp"
+                  width="100%"
+                  height="100%"
+                  alt="dam skor"
+                />
+                <img
+                  class="img-round"
+                  src="assets/herr-sko.webp"
+                  width="100%"
+                  height="100%"
+                  alt="herr sko"
+                />
+                <img
+                  class="img-round"
+                  src="assets/barn-sko.webp"
+                  width="100%"
+                  height="100%"
+                  alt="barn sko"
+                />
               </div>
             </div>
           </div>
-          <img class="img img-right" src="img/child-shoes.jpg" alt="Barn sko" />
+          
         </div>
       </section>
     </main>
     <div class="footer-container">
-      <!-- test -->
       <footer>
         <div class="footer-text-box">
           <p class="footer-text">&copy; 2022 ECskor</p>
         </div>
+        <a href="form.html">Nyhetsbrev</a>
         <div class="icons">
           <a href="#" class="icon"
             ><ion-icon class="icon instagram" name="logo-instagram"></ion-icon
@@ -116,5 +166,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

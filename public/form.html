@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ECskor en skobutik för alla, shoes store for everyone"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/queries.css" />
+    <title>ECskor | Nyhetsbrev</title>
+</head>
+<body class="form-body">
+  <header class="header">
+    <nav class="main-nav">
+      <a class="logo" href="index.html"
+        ><img
+          class="header-logo"
+          src="assets/ECskor.svg"
+          width="100%"
+          height="100%"
+          alt="ECSkor Logo"
+      /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="../Products/products.html">Products</a></li>
+        <li><a class="link" href="../About/about.html">About</a></li>
+        <li>
+          <a class="link link-last" href="../Contact/contact.html "
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <section class="section-form" id="section-cta">
+<div class="form-container">
+  <div class="form">
+
+    <div class="form-text-box">
+      <h2 class="heading-secondary">Prenumerera på vårat nyhetsbrev</h2>
+    <p class="form-text">
+      Vill du få information om våra senaste nyheter, ta del av rabatter och erbjudanden? skriv då upp dig för vårat nyhetsbrev idag
+    </p>
+
+    <form class="form-layout" action="construction.html">
+      <div>
+
+        <label for="full-name">Namn</label>
+        <input id="full-name" type="text" placeholder="Marcus Andersson" required />
+      </div>
+        <div> 
+          
+          <label for="email">Epost</label>
+          <input id="email"
+          type="email" 
+          placeholder="marcus.andersson@ecskor.se"
+          required />
+        </div>
+     
+
+<div>
+
+  <label for="select-where">Vart hörde du om oss?</label>
+  <select id="select-where" required>
+    <option value="">Välj ett alternativ:</option>
+    <option value="Friends">Vänner/familj</option>
+    <option value="Google">Google</option>
+    <option value="Youtube">Youtube</option>
+    <option value="Podcast">Reklamblad</option>
+    <option value="Ad">Instagram</option>
+    <option value="Other">Övrigt</option>
+  </select>
+  
+</div>
+
+      <button class="btn btn--form" type="submit">Prenumerera nu</button>
+    </form>
+  </div>
+    <div class="form-img-box" role="img" aria-label="Skor"></div>
+  </div>
+</div>
+
+      </section>
+    </main>
+    <div class="footer-container">
+      <footer>
+        <div class="footer-text-box">
+          <p class="footer-text">&copy; 2022 ECskor</p>
+        </div>
+        <div class="icons">
+          <a href="#" class="icon"
+            ><ion-icon class="icon instagram" name="logo-instagram"></ion-icon
+          ></a>
+          <a href="#" class="icon"
+            ><ion-icon class="icon facebook" name="logo-facebook"></ion-icon
+          ></a>
+          <a href="#" class="icon"
+            ><ion-icon class="icon twitter" name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

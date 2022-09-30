@@ -1,0 +1,119 @@
+.header {
+  background-color: #111;
+  box-shadow: 1px 1px 4px 0 rgb(0, 0, 0, 0.1);
+  position: fixed;
+  width: 95vw;
+  z-index: 3;
+  color: #fff;
+  margin-left: 2.5vw;
+  ul{
+    list-style: none;
+  overflow: hidden;
+  background-color: #111;
+  }
+  ul a{
+    display: block;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+  }
+
+  .logo{
+    float: left;
+    display: block;
+    font-size: 3.4rem;
+    margin: 20px 0px 20px 20px;
+    max-width: 30%;
+  }
+
+  .header-logo {
+    width: 35%;
+    margin: auto 0rem;
+  }
+
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+
+  .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    top: 0px;
+
+    &::before{
+      background: #333;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 10px;
+      transition: all 0.2s ease-out;
+    }
+    &::after{
+      background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+    }
+  }
+    .menu-btn {
+      display: none;
+
+      &:checked ~ .menu{
+        max-height: 340px;
+      }
+
+      &:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+
+    &:checked ~ .menu-icon .nav-icon::before {
+      transform: rotate(-45deg);
+      top: 5px;
+  }
+
+  &:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 5px;
+  }
+}
+.link:link,
+.link:visited,
+.header-title:link,
+.header-title:visited {
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  font-size: 2.4rem;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+
+  &:hover, &:active{
+    border: 1px solid #999;
+  }
+}
+
+.link-last {
+  margin-right: 2rem;
+}
+
+  }
