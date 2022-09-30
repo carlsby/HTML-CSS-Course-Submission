@@ -139,10 +139,7 @@ body{
     padding: 10px;
     transition: .5s;
  }
-
- footer{
-
- }
+ 
  @media (max-width: 1200px) {
     #logo{
         top: 35%;
