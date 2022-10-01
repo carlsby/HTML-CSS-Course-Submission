@@ -176,7 +176,7 @@ body{
 
 .menu li a:hover{
     box-shadow: 500px 0 0 #eddbcb inset;
-    padding: 35px 25px 45px 25px;  
+    padding: 35px 25px 45px 25px; 
 }
 /*burgar-menyn*/
 .burger{
